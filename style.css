@@ -1,0 +1,60 @@
+body > table {
+    width: 80%;
+}
+table{
+    border-collapse: collapse;   
+}
+table.list{
+    width: 100%;
+}
+tr th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr{
+    background-color: #dddddd;
+}
+input[type=text],input[type=mail]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;    
+}
+#submit,#update,#showdata,#sort{
+    width: 20%;
+    background-color: rgb(175, 171, 171);
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#update {
+    display: none;
+}
+form div.form-action-button{
+    text-align: right;
+}
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+.hide{
+    display: none;
+}
+h1{
+    color: #0000ee;
+}
+#username,#pass,#email,#mobileNumber{
+color: red;
+}
+#table{
+    display: none;
+}

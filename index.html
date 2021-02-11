@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Crud</title>
+    <!-- Css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Make a form here and paste the data -->
+    <h1>Contact form</h1>
+    <form action="#">
+        <div>
+            <label>Username</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <span id="username" class="font-weight-bold"></span>
+        </div>
+        <div>
+            <label>Code</label>
+            <input type="text" id="code" placeholder="Enter your code">
+            <span id="pass" class="font-weight-bold"></span>
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="text" id="mail" placeholder="Enter your email">
+            <span id="email" class="font-weight-bold"></span>
+        </div>
+        <div>
+            <label>Mobile Number</label>
+            <input type="text" id="number" placeholder="Enter your number">
+            <span id="mobileNumber" class="font-weight-bold"></span>
+        </div>
+        <div class="form-action-button">
+            <button type="submit" id="submit" value="onsubmit" onclick="onFormSubmit()">Submit</button>
+            <button id="update" value="rowId" onclick="updateRow()">Update</button>
+            <button type="button" id="showdata" onclick="showData()">Show Data</button>
+            <button type="button" id="sort" onclick="sortTable()">Sort</button>
+        </div>
+
+
+
+    </form>
+    <!-- Make a list to show the data -->
+    <div id="table">
+        <table class="list" id="employeeList">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Code</th>
+                    <th>Email</th>
+                    <th>Mobile Number</th>
+                    <th>Edit/Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<!-- Script file -->
+<script src="script.js"></script>
+
+</html>
